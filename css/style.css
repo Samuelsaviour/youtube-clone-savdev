@@ -64,11 +64,11 @@ body{
 }
 .elementholder .inputspan{
     
-    margin-left: 0px;
+    margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
-    width: 4%;
+    width: 25%;
     height: max-content;
     border-radius: 0;
     border: 1px solid rgb(54, 53, 53);
@@ -76,8 +76,8 @@ body{
     align-items: center;
 }
 .elementholder .inputspan input{
-   width: 3%;
-    flex-basis:30% ;yilidpl
+   width: 30%;
+    flex-basis:30% ;
     outline: none;
     color: #fff;
     padding: 9px 5px;
@@ -291,6 +291,7 @@ font-size: 17px;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
     }
     .moviecon .listclass{
+        display: none;
         width: 90%;
         height: max-content;
         margin-left: 0px;
@@ -338,7 +339,9 @@ font-size: 17px;
         object-fit: cover;
     }
 
-
+   .tt{
+    font-size: medium;
+   }
 
 
 
