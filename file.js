@@ -22,14 +22,31 @@ const leftangle=document.querySelector('.fa-angle-left');
 const listoption=document.querySelector('#gpd');
 const listclass=document.querySelector('#listclass');
 const video=document.querySelectorAll('.videocon');
+const showInOut=document.querySelector('.icon i');
+ console.log(showInOut);
 //const   fastfwd=document.querySelector('#fastfwd')
+ showInOut.addEventListener('click',(e)=>{
+ inputSpan.classList.toggle('show-in')
+})
+
+document.addEventListener('click',function(e){
+   if(!e.target.classList.contains('fa-search') ) {
+     inputSpan.classList.remove('show-in') 
+   }   
+   
+   })
+
 harmburger.addEventListener('click',(e)=>{
    console.log('shooooting');
    burger.classList.add('left')
  document.querySelector('.moviecon').style.width='80%';
 })
 
-
+showInOut.addEventListener('click',(e)=>{
+   console.log('shooooting');
+   burger.classList.add('left')
+ document.querySelector('.moviecon').style.width='80%';
+})
 logoburger.addEventListener('click',(e)=>{
 
    burger.classList.remove('left')
